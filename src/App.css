@@ -59,3 +59,43 @@ div{
 input{
   padding: 5px;
 }
+
+.r1c1 {
+  width: 50%;
+}
+  .popcornimg {
+  width: 100%;
+ 
+}
+table{
+  border-spacing: 0;
+}
+
+tr,td {
+  border: 5px solid lightgrey;
+}
+
+.r1c2 {
+  border-top: none;
+  border-right: none;
+}
+.r1c1 {
+  border-top: none;
+  border-left: none;
+}
+
+.r2c1 {
+  border-left: none;
+}
+.r3c1 {
+  border-left: none;
+  border-bottom: none;
+}
+
+.r3c2 {
+  border-bottom: none;
+  border-right: none;
+}
+
+
+
