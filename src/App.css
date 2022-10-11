@@ -63,10 +63,7 @@ input{
 .r1c1 {
   width: 50%;
 }
-  .popcornimg {
-  width: 100%;
- 
-}
+
 table{
   border-spacing: 0;
 }
@@ -96,6 +93,5 @@ tr,td {
   border-bottom: none;
   border-right: none;
 }
-
 
 
