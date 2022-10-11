@@ -5,10 +5,10 @@ import NavBar from "./NavBar";
 
 const Header = () => {
   return (
-    <header className="nav">
+    <>
       <NavBar />
       <img src={banner} alt="Classic Cinema Company Banner" />
-    </header>
+    </>
   );
 };
 
