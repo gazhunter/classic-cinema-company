@@ -1,10 +1,11 @@
 import React from "react";
 import NowShowing from "./NowShowing";
+import HomePageText from "./HomePageText";
 
 const Home = () => {
   return (
     <div className="container">
-      <p>Lets add some content</p>
+      <HomePageText />
       <NowShowing />
     </div>
   );
