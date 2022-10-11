@@ -29,6 +29,11 @@ const NavBar = () => {
         <img src={logo} alt="Classic Cinema Company" />
       </NavLink>
       {populateItems()}
+      <div className="search">
+        <form>
+          <input type="text" />
+        </form>
+      </div>
     </div>
   );
 };

@@ -4,8 +4,8 @@ import NavItemModel from "./NavItemModel";
 
 const NavItem = ({ navItem }) => {
   return (
-    <div>
-      <ul className="chevron">
+    <div className="chevron">
+      <ul>
         <li>
           <a href="/">{navItem.navName}</a>
         </li>
