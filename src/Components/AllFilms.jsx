@@ -11,7 +11,8 @@ const AllFilms = () => {
       currentFilm.shortname,
       currentFilm.synopsis,
       currentFilm.id,
-      currentFilm.agecert
+      currentFilm.agecert,
+      currentFilm.nowShowingSrcset.small
     );
     return <Film film={film} key={film.id} />;
   });

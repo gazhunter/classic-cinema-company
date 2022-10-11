@@ -9,7 +9,7 @@ const WhatsOnFilm = ({ film }) => {
       <img
         src={process.env.PUBLIC_URL + `/films/${film.smallThumb}`}
         alt={film.title}
-      ></img>
+      />
     </div>
   );
 };
