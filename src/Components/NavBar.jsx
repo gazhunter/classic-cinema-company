@@ -7,17 +7,17 @@ import NavItemModel from "./NavItemModel";
 
 const NavBar = () => {
   const navItems = [
-    { id: 1, name: "On Now" },
-    { id: 2, name: "Up Soon" },
-    { id: 3, name: "Sign Up" },
-    { id: 4, name: "Your Visit" },
-    { id: 5, name: "Book Now" },
+    { id: 1, name: "What's On", link: "/whatson" },
+    { id: 2, name: "Coming Soon", link: "/" },
+    { id: 3, name: "Sign Up", link: "/signup" },
+    { id: 4, name: "Your Visit", link: "/" },
+    { id: 5, name: "Book Tickets", link: "/" },
   ];
 
   const populateItems = () => {
     if (navItems?.length > 0) {
       return navItems.map((item) => {
-        const navItem = new NavItemModel(item.id, item.name);
+        const navItem = new NavItemModel(item.id, item.name, item.link);
         return <NavItem navItem={navItem} key={item.id} />;
       });
     }
@@ -29,11 +29,6 @@ const NavBar = () => {
         <img src={logo} alt="Classic Cinema Company" />
       </NavLink>
       {populateItems()}
-      <div className="search">
-        <form>
-          <input type="text" className="searchbar"/>
-        </form>
-      </div>
     </div>
   );
 };

@@ -7,6 +7,8 @@ import "./resources/css/ccc-styles.css";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import Home from "./Components/Home";
+import WhatsOn from "./Components/WhatsOn";
+import SignUp from "./Components/SignUp";
 
 function App() {
   return (
@@ -16,6 +18,12 @@ function App() {
         <Switch>
           <Route exact path="/">
             <Home />
+          </Route>
+          <Route exact path="/whatson">
+            <WhatsOn />
+          </Route>
+          <Route exact path="/signup">
+            <SignUp />
           </Route>
         </Switch>
         <Footer />
