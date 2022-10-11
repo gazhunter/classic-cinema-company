@@ -7,15 +7,15 @@ import classic from './classic.png';
 
 const HomePageText = () => {
     return(
-        <div width="80%">
-            <table width="80%">
+        <div>
+            <table>
                 <tr>
                     <td className="r1c1"><Loremr1c1 /></td>                
                     <td rowSpan="2" className="r1c2"><Loremr1c2 /></td>                
                 </tr>
                 <tr>
                     <td className="r2c1">
-                        <img src={popcorn} alt="alt" className="popcornimg" />
+                        <img src={popcorn} alt="alt" className="popcornimg" width="600px" />
                     </td>
                 </tr>
                 <tr>
@@ -23,7 +23,7 @@ const HomePageText = () => {
                         <Loremr2c1 />
                     </td>
                     <td className="r3c2">
-                        <img src={classic} alt="alt" className="popcornimg" />
+                        <img src={classic} alt="alt" className="popcornimg" width="600px" />
                     </td>
                 </tr>
             </table>
