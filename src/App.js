@@ -1,25 +1,26 @@
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap';
-import 'popper.js';
-import 'jquery';
-import './Components/css/qa.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap";
+import "./resources/css/ccc-styles.css";
 
-import Header from './Components/Header';
-import Footer from './Components/Footer';
-import AllTodos from './Components/AllTodos';
-import AddEditTodo from './Components/AddEditTodo';
+import Header from "./Components/Header";
+import Footer from "./Components/Footer";
+import Home from "./Components/Home";
 
 function App() {
   return (
-    <div className="container">
-      <Header />
+    <Router>
       <div className="container">
-        <AllTodos />
-        <AddEditTodo />
+        <Header />
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+        </Switch>
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </Router>
   );
 }
 

@@ -2,8 +2,11 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="mt-auto py-3 container text-center">
-      &copy; QA Ltd 2019-
+    <footer className="footer footer-content">
+      <div id="copyright">
+        Copyright &copy; The Classic Cinema Company Ltd 2022. All rights
+        reserved.
+      </div>
     </footer>
   );
 };
