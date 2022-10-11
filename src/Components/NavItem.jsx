@@ -1,13 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
 import NavItemModel from "./NavItemModel";
+import { NavLink } from "react-router-dom";
 
 const NavItem = ({ navItem }) => {
+  console.log(navItem);
   return (
     <div className="chevron">
       <ul>
         <li>
-          <a href="/">{navItem.navName}</a>
+          <NavLink to={navItem.navLink}>{navItem.navName}</NavLink>
         </li>
       </ul>
     </div>
