@@ -1,11 +1,13 @@
 import React from "react";
+import PropTypes from "prop-types";
+import NavItemModel from "./NavItemModel";
 
-const NavItem = (props) => {
+const NavItem = ({ navItem }) => {
   return (
     <div>
       <ul className="chevron">
         <li>
-          <a href="/">{props.name}</a>
+          <a href="/">{navItem.navName}</a>
         </li>
       </ul>
     </div>
@@ -13,3 +15,7 @@ const NavItem = (props) => {
 };
 
 export default NavItem;
+
+NavItem.propTypes = {
+  navItem: PropTypes.instanceOf(NavItemModel),
+};
