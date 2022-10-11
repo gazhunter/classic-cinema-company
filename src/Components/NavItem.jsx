@@ -4,7 +4,6 @@ import NavItemModel from "./NavItemModel";
 import { NavLink } from "react-router-dom";
 
 const NavItem = ({ navItem }) => {
-  console.log(navItem);
   return (
     <div className="chevron">
       <ul>
