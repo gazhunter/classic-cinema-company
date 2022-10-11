@@ -6,10 +6,12 @@ const WhatsOnFilm = ({ film }) => {
   return (
     <div className="whatsOnCard">
       <h4>{film.title}</h4>
+      <p>{film.agecert}</p>
       <img
         src={process.env.PUBLIC_URL + `/films/${film.smallThumb}`}
         alt={film.title}
       />
+      <p>{film.synopsys}</p>
     </div>
   );
 };
