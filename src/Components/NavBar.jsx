@@ -7,11 +7,11 @@ import NavItemModel from "./NavItemModel";
 
 const NavBar = () => {
   const navItems = [
-    { id: 1, name: "What's On" },
-    { id: 2, name: "Common Soon" },
+    { id: 1, name: "On Now" },
+    { id: 2, name: "Up Soon" },
     { id: 3, name: "Sign Up" },
     { id: 4, name: "Your Visit" },
-    { id: 5, name: "Book Tickets" },
+    { id: 5, name: "Book Now" },
   ];
 
   const populateItems = () => {
@@ -31,7 +31,7 @@ const NavBar = () => {
       {populateItems()}
       <div className="search">
         <form>
-          <input type="text" />
+          <input type="text" className="searchbar"/>
         </form>
       </div>
     </div>
