@@ -1,10 +1,11 @@
 import React from "react";
+import AllFilms from "./AllFilms";
 import NowShowing from "./NowShowing";
 
 const Home = () => {
   return (
     <div className="container">
-      <p>Lets add some content</p>
+      <AllFilms/>
       <NowShowing />
     </div>
   );
